@@ -1,0 +1,610 @@
+[{
+        "geoCountry": "Argentina",
+        "countryCode": "ARG",
+        "latlong": {
+            "geoCountry": "Argentina",
+            "latitude": -38.4161,
+            "longitude": -63.6167
+        },
+        "mediaPerformance": 90.5573,
+        "overallPerformance": 25.2136,
+        "webPerformance": 26.5956,
+        "operators": [
+            {
+                "operatorName": "Argentina_Operator_1",
+                "operatorNameUnAnonymized": "Claro",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Argentina_Operator_2",
+                "operatorNameUnAnonymized": "Movistar",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Argentina_Operator_3",
+                "operatorNameUnAnonymized": "Personal",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+
+    }, {
+        "geoCountry": "Australia",
+        "countryCode": "AUS",
+        "latlong": {
+            "geoCountry": "Australia",
+            "latitude": -25.2744,
+            "longitude": 133.775
+        },
+        "mediaPerformance": 63.6977,
+        "overallPerformance": 73.45,
+        "webPerformance": 48.6645,
+        "operators": [
+            {
+                "operatorName": "Australia_Operator_1",
+                "operatorNameUnAnonymized": "Telstra",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Australia_Operator_2",
+                "operatorNameUnAnonymized": "Vodafone",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Australia_Operator_3",
+                "operatorNameUnAnonymized": "Optus",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Austria",
+        "countryCode": "AUT",
+        "latlong": {
+            "geoCountry": "Austria",
+            "latitude": 47.5162,
+            "longitude": 14.5501
+        },
+        "mediaPerformance": 46.86,
+        "overallPerformance": 91.69,
+        "webPerformance": 63.56,
+        "operators": [
+            {
+                "operatorName": "Austria_Operator_1",
+                "operatorNameUnAnonymized": "A1",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Austria_Operator_2",
+                "operatorNameUnAnonymized": "T-Mobile",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Austria_Operator_3",
+                "operatorNameUnAnonymized": "3",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Brazil",
+        "countryCode": "BRA",
+        "latlong": {
+            "geoCountry": "Brazil",
+            "latitude": -14.235,
+            "longitude": -51.9253
+        },
+        "mediaPerformance": 42.99,
+        "overallPerformance": 37.6953,
+        "webPerformance": 71.63,
+        "operators": [
+            {
+                "operatorName": "Brazil_Operator_1",
+                "operatorNameUnAnonymized": "TIM",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Brazil_Operator_2",
+                "operatorNameUnAnonymized": "Vivo",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Brazil_Operator_3",
+                "operatorNameUnAnonymized": "Claro",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "France",
+        "countryCode": "FRA",
+        "latlong": {
+            "geoCountry": "France",
+            "latitude": 46.2276,
+            "longitude": 2.21375
+        },
+        "mediaPerformance": 74.4999,
+        "overallPerformance": 13.6495,
+        "webPerformance": 67.815,
+        "operators": [
+            {
+                "operatorName": "France_Operator_1",
+                "operatorNameUnAnonymized": "Orange",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "France_Operator_2",
+                "operatorNameUnAnonymized": "SFR",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "France_Operator_3",
+                "operatorNameUnAnonymized": "Free",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Germany",
+        "countryCode": "DEU",
+        "latlong": {
+            "geoCountry": "Germany",
+            "latitude": 51.1657,
+            "longitude": 10.4515
+        },
+        "mediaPerformance": 43.5298,
+        "overallPerformance": 55.1614,
+        "webPerformance": 24.0219,
+        "operators": [
+            {
+                "operatorName": "Germany_Operator_1",
+                "operatorNameUnAnonymized": "Telekom",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Germany_Operator_2",
+                "operatorNameUnAnonymized": "Vodafone",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Germany_Operator_3",
+                "operatorNameUnAnonymized": "E-Plus",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Hong Kong",
+        "countryCode": "HKG",
+        "latlong": {
+            "geoCountry": "Hong Kong",
+            "latitude": 22.3964,
+            "longitude": 114.109
+        },
+        "mediaPerformance": 94.1491,
+        "overallPerformance": 34.8585,
+        "webPerformance": 16.6647,
+        "operators": [
+            {
+                "operatorName": "Hong_Kong_Operator_1",
+                "operatorNameUnAnonymized": "China Mobile",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Hong_Kong_Operator_2",
+                "operatorNameUnAnonymized": "3",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Hong_Kong_Operator_3",
+                "operatorNameUnAnonymized": "SmarTone",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "India",
+        "countryCode": "IND",
+        "latlong": {
+            "geoCountry": "India",
+            "latitude": 20.5937,
+            "longitude": 78.9629
+        },
+        "mediaPerformance": 40.1563,
+        "overallPerformance": 8.80827,
+        "webPerformance": 11.2576,
+        "operators": [
+            {
+                "operatorName": "India_Operator_1",
+                "operatorNameUnAnonymized": "Airtel",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "India_Operator_2",
+                "operatorNameUnAnonymized": "BSNL",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "India_Operator_3",
+                "operatorNameUnAnonymized": "Reliance",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Israel",
+        "countryCode": "ISR",
+        "latlong": {
+            "geoCountry": "Israel",
+            "latitude": 31.0461,
+            "longitude": 34.8516
+        },
+        "mediaPerformance": 18.3339,
+        "overallPerformance": 39.4659,
+        "webPerformance": 6.29383,
+        "operators": [
+            {
+                "operatorName": "Israel_Operator_1",
+                "operatorNameUnAnonymized": "Cellcom",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Israel_Operator_2",
+                "operatorNameUnAnonymized": "Orange",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Israel_Operator_3",
+                "operatorNameUnAnonymized": "Pelephone",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Italy",
+        "countryCode": "ITA",
+        "latlong": {
+            "geoCountry": "Italy",
+            "latitude": 41.8719,
+            "longitude": 12.5674
+        },
+        "mediaPerformance": 71.2008,
+        "overallPerformance": 70.9047,
+        "webPerformance": 97.6964,
+        "operators": [
+            {
+                "operatorName": "Italy_Operator_1",
+                "operatorNameUnAnonymized": "TIM",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Italy_Operator_2",
+                "operatorNameUnAnonymized": "Vodafone",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Italy_Operator_3",
+                "operatorNameUnAnonymized": "Wind",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Japan",
+        "countryCode": "JPN",
+        "latlong": {
+            "geoCountry": "Japan",
+            "latitude": 36.2048,
+            "longitude": 138.253
+        },
+        "mediaPerformance": 1.00231,
+        "overallPerformance": 36.1258,
+        "webPerformance": 69.6007,
+        "operators": [
+            {
+                "operatorName": "Japan_Operator_1",
+                "operatorNameUnAnonymized": "NTT docomo",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Japan_Operator_2",
+                "operatorNameUnAnonymized": "au",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Japan_Operator_3",
+                "operatorNameUnAnonymized": "SoftBank",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Mexico",
+        "countryCode": "MEX",
+        "latlong": {
+            "geoCountry": "Mexico",
+            "latitude": 23.6345,
+            "longitude": -102.553
+        },
+        "mediaPerformance": 91.4091,
+        "overallPerformance": 67.9148,
+        "webPerformance": 54.9143,
+        "operators": [
+            {
+                "operatorName": "Mexico_Operator_1",
+                "operatorNameUnAnonymized": "Telcel",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Mexico_Operator_2",
+                "operatorNameUnAnonymized": "Movistar",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Mexico_Operator_3",
+                "operatorNameUnAnonymized": "lusacell",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Philippines",
+        "countryCode": "PHL",
+        "latlong": {
+            "geoCountry": "Philippines",
+            "latitude": 12.8797,
+            "longitude": 121.774
+        },
+        "mediaPerformance": 54.0387,
+        "overallPerformance": 31.1968,
+        "webPerformance": 65.7694,
+        "operators": [
+            {
+                "operatorName": "Philippines_Operator_1",
+                "operatorNameUnAnonymized": "Smart",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Philippines_Operator_2",
+                "operatorNameUnAnonymized": "Globe",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }
+        ]
+    }, {
+        "geoCountry": "Singapore",
+        "countryCode": "SGP",
+        "latlong": {
+            "geoCountry": "Singapore",
+            "latitude": 1.35208,
+            "longitude": 103.82
+        },
+        "mediaPerformance": 95.966,
+        "overallPerformance": 52.2395,
+        "webPerformance": 64.104,
+        "operators": [
+            {
+                "operatorName": "Singapore_Operator_1",
+                "operatorNameUnAnonymized": "SingTel Mobile",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Singapore_Operator_2",
+                "operatorNameUnAnonymized": "StarHub",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Singapore_Operator_3",
+                "operatorNameUnAnonymized": "M1",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "South Korea",
+        "countryCode": "KR",
+        "latlong": {
+            "geoCountry": "South Korea",
+            "latitude": 35.9078,
+            "longitude": 127.767
+        },
+        "mediaPerformance": 17.7142,
+        "overallPerformance": 67.607,
+        "webPerformance": 23.212,
+        "operators": [
+            {
+                "operatorName": "South_Korea_Operator_1",
+                "operatorNameUnAnonymized": "SK Telecom",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "South_Korea_Operator_2",
+                "operatorNameUnAnonymized": "olleh",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "South_Korea_Operator_3",
+                "operatorNameUnAnonymized": "LG U+",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Spain",
+        "countryCode": "ESP",
+        "latlong": {
+            "geoCountry": "Spain",
+            "latitude": 40.4637,
+            "longitude": -3.74922
+        },
+        "mediaPerformance": 0.693,
+        "overallPerformance": 81.38,
+        "webPerformance": 23.74,
+        "operators": [
+            {
+                "operatorName": "Spain_Operator_1",
+                "operatorNameUnAnonymized": "Movistar",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Spain_Operator_2",
+                "operatorNameUnAnonymized": "Vodafone",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Spain_Operator_3",
+                "operatorNameUnAnonymized": "Orange",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }, {
+                "operatorName": "Spain_Operator_4",
+                "operatorNameUnAnonymized": "Yoigo",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "Turkey",
+        "countryCode": "TUR",
+        "latlong": {
+            "geoCountry": "Turkey",
+            "latitude": 38.9637,
+            "longitude": 35.2433
+        },
+        "mediaPerformance": 50.221,
+        "overallPerformance": 3.76279,
+        "webPerformance": 49.1026,
+        "operators": [
+            {
+                "operatorName": "Turkey_Operator_1",
+                "operatorNameUnAnonymized": "Turkcell",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "Turkey_Operator_2",
+                "operatorNameUnAnonymized": "Vodafone",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "Turkey_Operator_3",
+                "operatorNameUnAnonymized": "Avea",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "United Kingdom",
+        "countryCode": "GBR",
+        "latlong": {
+            "geoCountry": "United Kingdom",
+            "latitude": 55.3781,
+            "longitude": -3.43597
+        },
+        "mediaPerformance": 49.0868,
+        "overallPerformance": 74.8636,
+        "webPerformance": 74.2698,
+        "operators": [
+            {
+                "operatorName": "UK_Operator_1",
+                "operatorNameUnAnonymized": "EE",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "UK_Operator_2",
+                "operatorNameUnAnonymized": "O2",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "UK_Operator_3",
+                "operatorNameUnAnonymized": "Vodafone",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }, {
+        "geoCountry": "USA",
+        "countryCode": "USA",
+        "latlong": {
+            "geoCountry": "USA",
+            "latitude": 37.0902,
+            "longitude": -95.7129
+        },
+        "mediaPerformance": 94.7712,
+        "overallPerformance": 63.0296,
+        "webPerformance": 24.0413,
+        "operators": [
+            {
+                "operatorName": "USA_Operator_1",
+                "operatorNameUnAnonymized": "Verizon",
+                "mediaPerformance": 34.53,
+                "overallPerformance": 51.236,
+                "webPerformance": 11.56
+            }, {
+                "operatorName": "USA_Operator_2",
+                "operatorNameUnAnonymized": "AT&T",
+                "mediaPerformance": 42.53,
+                "overallPerformance": 1.26,
+                "webPerformance": 45.5
+            }, {
+                "operatorName": "USA_Operator_3",
+                "operatorNameUnAnonymized": "Sprint",
+                "mediaPerformance": 51.54,
+                "overallPerformance": 5.26,
+                "webPerformance": 2.56
+            }
+        ]
+    }]

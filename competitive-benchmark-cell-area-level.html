@@ -1,0 +1,297 @@
+<html>
+    <head>
+        <title> Akamai : Competitive Benchmark – Cell Area Level</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">	
+        <script src="js/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-multiselect.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
+<link rel="icon" type="image/png" href="favicon.png">
+        <script>
+
+            $(document).ready(function () {
+                $("#menu-box").hide();
+                $("#menu-icon").click(function () {
+                    $("#menu-box").toggle(500, "linear");
+                });
+
+                var metrics = [
+                    {label: 'Startup Time', value: 'Startup Time', selected: "selected"},
+                    {label: "Bit Rate", value: "Bit Rate", selected: "selected"},
+                    {label: "Abandonment Rate", value: "Abandonment Rate", selected: "selected"}
+
+                ];
+                $("#metrics").multiselect('dataprovider', metrics);
+                
+                $("#datepicker1").datepicker({
+                    showOn: "button",
+                    buttonImage: "images/ic_event_white_24dp.png",
+                    buttonImageOnly: true,
+                    buttonText: "Select date",
+                    beforeShow: function (textbox, instance) {
+                        instance.dpDiv.css({
+                            marginTop: (-textbox.offsetHeight) + 'px',
+                            marginLeft: textbox.offsetWidth + 'px'
+                        });
+                    }
+                });
+                $("#datepicker2").datepicker({
+                    showOn: "button",
+                    buttonImage: "images/ic_event_white_24dp.png",
+                    buttonImageOnly: true,
+                    buttonText: "Select date",
+                    beforeShow: function (textbox, instance) {
+                        instance.dpDiv.css({
+                            marginTop: (-textbox.offsetHeight) + 'px',
+                            marginLeft: textbox.offsetWidth + 'px'
+                        });
+                    }
+                });
+            });
+        </script>
+
+    </head>
+
+    <body class="map-bg">
+        <div class="main-container">
+            <header class="header-static"> 
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/akamai-logo.png" style="width:200px;"></a>
+                    </div><!--/.logo-->
+
+                    <div class="title">Competitive Benchmark - Cell Area Level (with Apps info)</div>
+
+                    <div id="menu-icon" class="menu-icon">				
+                    </div><!--/.menu-icon-->
+
+                </div><!--/.wrapper-->
+            </header><!--/.header-->
+
+            <div id="menu-box">
+                <ul class="menu-links">
+                    <li><a href=""><b>Network Performance Benchmark</b></a><hr>
+                        <ul>
+                            <li><img src="images/dynamic-icon.png"> <a href="index.html">Global Performance Rank</a></li>
+                            <li><img src="images/dynamic-icon.png"> <a href="key-media-analytics-api-comparision.html">Key QoE metrics - Media</a></li>
+                            <li><img src="images/dynamic-icon.png"> <a href="key-run-kpis-comparision.html">Key QoE metrics - Web</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-global-operators.html">MNOs ranking - World Wide</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-country-level.html">MNOs ranking - by Country</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-market-level.html">MNOs ranking - by Markets</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-cell-area-level.html">MNOs ranking - by Cell Areas</a></li>
+                        </ul>
+                    </li>
+                    <li></li>
+                    <li><a href=""><b>Wifi Visibility</b></a><hr>
+                        <ul>                            
+                            <li><img src="images/static-icon.png"> <a href="usage-wifi-vs-cellular-market-side-by-side.html">Usage - Wifi vs Cellular (Markets)</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-wifi-vs-cellular-over-time.html">Usage - Wifi vs Cellular (Time Trend)</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-wats-being-used.html">Usage - Breakdown by Content Application</a></li>
+                            <li><img src="images/static-icon.png"> <a href="performance.html">Performance - Wifi vs Cellular</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-performance-market-summary.html">Performance & Usage - by Markets</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-performance-zoom-in.html">Performance & Usage - by Cell Areas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.menu-box-->
+
+            <div class="wrapper">
+
+                <div>
+
+                    <div class="sidebar-static">
+
+                        <br>
+
+                        <span class="side-bar-title">&nbsp;Dates</span>
+                        <div class="clear"></div>
+                        <ul class="controls-container">
+                            <li><input type="text" id="datepicker1" class="form-control" style="width: 150px;"  name="add" value="01/01/2015">
+                                <input type="text" id="datepicker2" class="form-control" style="width: 150px;"  name="add" value="01/31/2015"></li>
+                        </ul>
+
+                        <hr width="95%">
+
+                        <span class="side-bar-title">&nbsp;Select QoE Index</span>
+
+                        <ul class="controls-container">
+                            <li>
+                                <div class="btn-group" role="group" aria-label="...">                                    
+                                    <button type="button" class="btn btn-default  square-icon-2">Web<br><img src="images/web-icon.png"></button>
+                                    <button type="button" class="btn btn-default  active square-icon-2">Media<br><img src="images/media-icon.png"></button>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <hr width="95%">
+
+                        <span class="side-bar-title">&nbsp;Network Type</span>
+
+                        <ul class="controls-container">
+                            <li>  
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default active square-icon-3">LTE</button>
+                                    <button type="button" class="btn btn-default square-icon-3">3G</button>
+                                    <button type="button" class="btn btn-default square-icon-3">2G</button>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <hr width="95%">
+
+                        <span class="side-bar-title">&nbsp;Metrics</span>
+                        <br>
+                        <ul class="controls-container drop-down-box-wide">
+                            <li>
+                                <select id="metrics" multiple="multiple" class="form-control drop-down-list-box">
+                                </select>
+                            </li></ul>
+                    </div>
+
+                    <div id="graph-content-static-auto">
+
+                        <div>
+                            <div class="graph-content-graph image-wide">
+                                <img src="images/heapmap.png">
+                            </div><!--/chartContainer2-->
+                        </div>
+
+                        <div>
+
+                            <div class="graph-content-graph">
+
+                                <div class="table1">
+                                    <table class="table">
+                                        <tr>
+                                            <th>&nbsp;</th>
+                                            <th>Rank</th>
+                                            <th>Score</th>
+                                        </tr>
+                                        <tr class="table-row-yellow">
+                                            <td>Operation Z</td>
+                                            <td><div class="up-arraw"></div>1</td>
+                                            <td>81.3</td>
+                                        </tr>
+                                        <tr class="table-row-blue">
+                                            <td>Operation X</td>
+                                            <td><div class="up-arraw"></div>1</td>
+                                            <td>81.3</td>
+                                        </tr>
+                                        <tr class="table-row-pink">
+                                            <td>Operation Y</td>
+                                            <td><div class="up-arraw"></div>1</td>
+                                            <td>81.3</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="">
+                                    <table class="table gray-table-47-9">
+                                        <tr>
+                                            <th>Top 5 Devices</th>					        			
+                                        </tr>
+                                        <tr>
+                                            <td>Samsung Galaxy S5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nexus 5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>iPhone 5S</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HTC One</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Samsung Galaxy Note3</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="">
+                                    <table class="table gray-table-47-9">
+                                        <tr>
+                                            <th>Top Apps Usage</th>
+                                            <th>User QoE Score</th>
+                                        </tr>
+                                        <tr>
+                                            <td>ESPN</td>
+                                            <td>86.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fox Sports</td>
+                                            <td>69.4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BBC News</td>
+                                            <td>73.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yahoo!</td>
+                                            <td>61.4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>USA Today</td>
+                                            <td>78.3</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="">
+                                    <table class="table gray-table-70">
+ 
+                                        <tr>
+                                            <th>Top Format</th>
+                                            <th>Startup Time</th>
+                                            <th>Bit Rate</th>
+                                            <th>Abandonment Rate</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Android</td>
+                                            <td>0.67 secs</td>
+                                            <td>2052 kbps</td>
+                                            <td>1.37%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Android HTTP Streaming</td>
+                                            <td>9.52 secs</td>
+                                            <td>960 kbps</td>
+                                            <td>10.43%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HTTP Live Streaming</td>
+                                            <td>5.24 secs</td>
+                                            <td>1.697 kbps</td>
+                                            <td>6.63%</td>
+                                        </tr>					        		
+                                    </table>
+                                </div>
+
+
+
+                            </div><!--/chartContainer2-->
+
+
+
+                        </div><!--/.graph-content-->
+                    </div><!--/.map-bg-->
+
+
+
+                    <div class="clear"></div><!--/.clear-->
+
+                </div><!--/.map-bg-->
+
+            </div><!--/.wrapper-->
+
+        </div><!--/.main-wrapper-->
+
+        <div class="fixed-footer" style="position: fixed;width: 100%;height: 40px;background-color: rgba(74,144,226,0.5);text-align: center;bottom: 0;left: 0;color: #FFFFFF;font-size: 1.5em;line-height: 40px;    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000; ">
+            All the data displayed in this screen is for demo purposes
+        </div>​
+    </body>
+</html>

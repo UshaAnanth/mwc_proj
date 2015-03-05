@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <title> Akamai : Usage + Performance - Market Summary</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">	
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="js/amcharts.js"></script>
+        <script type="text/javascript" src="js/serial.js"></script>
+        <script type="text/javascript" src="js/theme.black.js"></script>
+        <script type="text/javascript" src="js/akamai/screen13.js"></script>
+<link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
+
+    </head>
+
+    <body class="map-bg">
+        <div class="main-container">
+            <header class="header-static"> 
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/akamai-logo.png" style="width:200px;"></a>
+                    </div><!--/.logo-->
+
+                    <div class="title">Usage + Performance - Market Summary</div>
+
+                    <div id="menu-icon" class="menu-icon">
+                    </div><!--/.menu-icon-->
+
+                </div><!--/.wrapper-->
+            </header><!--/.header-->
+
+            <div id="menu-box">
+                <ul class="menu-links">
+                    <li><a href=""><b>Network Performance Benchmark</b></a><hr>
+                        <ul>
+                            <li><img src="images/dynamic-icon.png"> <a href="index.html">Global Performance Rank</a></li>
+                            <li><img src="images/dynamic-icon.png"> <a href="key-media-analytics-api-comparision.html">Key QoE metrics - Media</a></li>
+                            <li><img src="images/dynamic-icon.png"> <a href="key-run-kpis-comparision.html">Key QoE metrics - Web</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-global-operators.html">MNOs ranking - World Wide</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-country-level.html">MNOs ranking - by Country</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-market-level.html">MNOs ranking - by Markets</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-cell-area-level.html">MNOs ranking - by Cell Areas</a></li>
+                        </ul>
+                    </li>
+                    <li></li>
+                    <li><a href=""><b>Wifi Visibility</b></a><hr>
+                        <ul>                            
+                            <li><img src="images/static-icon.png"> <a href="usage-wifi-vs-cellular-market-side-by-side.html">Usage - Wifi vs Cellular (Markets)</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-wifi-vs-cellular-over-time.html">Usage - Wifi vs Cellular (Time Trend)</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-wats-being-used.html">Usage - Breakdown by Content Application</a></li>
+                            <li><img src="images/static-icon.png"> <a href="performance.html">Performance - Wifi vs Cellular</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-performance-market-summary.html">Performance & Usage - by Markets</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-performance-zoom-in.html">Performance & Usage - by Cell Areas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.menu-box-->
+
+            <div class="wrapper">
+
+                <div >
+
+                    <div class="sidebar-static-auto">
+
+                        <br>
+
+                        <span class="side-bar-title">&nbsp;Dates</span>
+                        <div class="clear"></div>
+                        <table class="usage-side-bar-table1">
+                            <tr>
+                                <td class="radio">
+                                    <label><input type="radio" name="date1" checked="">Range of Dates</label>
+                                </td>
+                                <td class="radio">
+                                    <label><input type="radio" name="date1">Time of the day</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" id="datepicker1"  style="width: 150px;" name="add" value="01/01/2015">
+                                </td>                                
+                                <td>
+                                    <input type="text" id="datepicker2"  style="width: 150px;" name="add" value="01/31/2015">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" id="datepicker3"  style="width: 150px;" name="add" value="01/28/2015">
+                                </td>
+                                <td>
+                                    <div id="slider" style="color: white"></div>
+                                    <div id="amount" style="color: white"></div>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <hr width="95%">
+
+                        <span class="side-bar-title">&nbsp;Wifi Types</span>
+                        <ul class="controls-container">
+                            <li>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default active">Public Vs Private<img src="images/ic_wifi_lock_black_18dp.png" ></button>
+                                    <button type="button" class="btn btn-default">Domestic Vs Roaming <img src="images/ic_signal_wifi_statusbar_4_bar_black_18dp.png" ></button>
+                                    <button type="button" class="btn btn-default">Tethering<img src="images/ic_wifi_tethering_black_18dp.png" > </button>
+                                </div>
+                            </li></ul>
+                        <ul class="controls-container">
+                            <li>
+                                <div class="btn-group-sm" role="group" aria-label="..." style="text-align:center">
+                                    <p style="text-align:center;">
+                                    <button type="button" class="btn btn-default active">% split</button>
+                                    <button type="button" class="btn btn-default">MB </button>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <hr width="95%">
+
+                        <span class="side-bar-title">&nbsp;Traffic Type</span>s                        
+                        <ul class="controls-container">
+                            <li>
+                                <div class="btn-group" role="group" aria-label="...">                                    
+                                    <button type="button" class="btn btn-default  square-icon-2">Web<br><img src="images/web-icon.png"></button>
+                                    <button type="button" class="btn btn-default active square-icon-2">Media<br><img src="images/media-icon.png"></button>
+                                </div> 
+                            </li>
+                        </ul>
+
+                        <hr width="95%">
+
+                        <span class="side-bar-title">&nbsp;Network View</span>
+                        <ul class="controls-container">
+                            <li>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <div class="clear"></div>
+                                    <button type="button" class="btn btn-default active">Only users in my network <img src="images/ic_account_circle_black_18dp.png" ></button>
+                                    <button type="button" class="btn btn-default ">All users across operators <img src="images/ic_group_black_18dp.png" >  </button>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div id="graph-content-static">
+
+                        <div>
+
+
+                            <div id="chartContainer2" class="graph-content-graph image-wide">
+                                <div id="chart8" style="width:100% ;height:450px;">
+                                </div>
+
+                            </div><!--/chartContainer2-->
+
+                        </div><!--/.graph-content-->
+
+                    </div><!--/.map-bg-->
+
+
+
+                    <div class="clear"></div><!--/.clear-->
+
+                </div><!--/.map-bg-->
+
+            </div><!--/.wrapper-->
+
+        </div><!--/.main-wrapper-->
+
+         <div class="fixed-footer" style="position: fixed;width: 100%;height: 40px;background-color: rgba(74,144,226,0.5);text-align: center;bottom: 0;left: 0;color: #FFFFFF;font-size: 1.5em;line-height: 40px;    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000; ">
+            All the data displayed in this screen is for demo purposes
+        </div>​
+
+    </body>
+</html>

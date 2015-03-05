@@ -1,0 +1,266 @@
+<html>
+    <head>
+        <title> Akamai : Usage + Performance - Zoom In</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">	
+        <script src="js/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="js/amcharts.js"></script>
+        <script type="text/javascript" src="js/pie.js"></script>
+        <script type="text/javascript" src="js/theme.black.js"></script>
+        <script type="text/javascript" src="js/akamai/screen14.js"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
+<link rel="icon" type="image/png" href="favicon.png">
+        <script>
+            $(document).ready(function () {
+                $("#menu-box").hide();
+                $("#menu-icon").click(function () {
+                    $("#menu-box").toggle(500, "linear");
+                });
+            });
+        </script>
+
+    </head>
+
+    <body class="map-bg">
+        <div class="main-container">
+            <header class="header-static"> 
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/akamai-logo.png" style="width: 200px;"></a>
+                    </div><!--/.logo-->
+
+                    <div class="title">Usage + Performance - Zoom In</div>
+
+                    <div id="menu-icon" class="menu-icon">
+                    </div><!--/.menu-icon-->
+
+                </div><!--/.wrapper-->
+            </header><!--/.header-->
+
+            <div id="menu-box">
+                <ul class="menu-links">
+                    <li><a href=""><b>Network Performance Benchmark</b></a><hr>
+                        <ul>
+                            <li><img src="images/dynamic-icon.png"> <a href="index.html">Global Performance Rank</a></li>
+                            <li><img src="images/dynamic-icon.png"> <a href="key-media-analytics-api-comparision.html">Key QoE metrics - Media</a></li>
+                            <li><img src="images/dynamic-icon.png"> <a href="key-run-kpis-comparision.html">Key QoE metrics - Web</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-global-operators.html">MNOs ranking - World Wide</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-country-level.html">MNOs ranking - by Country</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-market-level.html">MNOs ranking - by Markets</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-cell-area-level.html">MNOs ranking - by Cell Areas</a></li>
+                        </ul>
+                    </li>
+                    <li></li>
+                    <li><a href=""><b>Wifi Visibility</b></a><hr>
+                        <ul>                            
+                            <li><img src="images/static-icon.png"> <a href="usage-wifi-vs-cellular-market-side-by-side.html">Usage - Wifi vs Cellular (Markets)</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-wifi-vs-cellular-over-time.html">Usage - Wifi vs Cellular (Time Trend)</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-wats-being-used.html">Usage - Breakdown by Content Application</a></li>
+                            <li><img src="images/static-icon.png"> <a href="performance.html">Performance - Wifi vs Cellular</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-performance-market-summary.html">Performance & Usage - by Markets</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-performance-zoom-in.html">Performance & Usage - by Cell Areas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.menu-box-->
+
+            <div class="wrapper">
+
+                <div>
+
+                    <div class="sidebar-static">
+
+                        <br>
+
+                        <span class="side-bar-title">&nbsp;Market Drill Down</span>                        
+                        <ul class="controls-container drop-down-box-wide">
+                            <li>  
+                                <div class="white-txt">
+                                    <select id="market" multiple="multiple" >
+                                    </select> 
+                                </div><!--/.graph-content-top white-txt-->
+                            </li></ul>
+
+                        <hr width="95%">
+
+                        <span class="side-bar-title">&nbsp;Dates</span>
+
+                        <table class="usage-side-bar-table1">
+                            <tr>
+                                <td class="radio">
+                                    <label><input type="radio" name="date1" checked="">Range of Dates</label>
+                                </td>
+                                <td class="radio">
+                                    <label><input type="radio" name="date1">Time of the day</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" id="datepicker1"  style="width: 150px;" name="add" value="01/01/2015">
+                                </td>
+                                <td>
+                                    <input type="text" id="datepicker2"  style="width: 150px;" name="add" value="01/31/2015">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" id="datepicker3"  style="width: 150px;" name="add" value="01/28/2015">
+                                </td>
+                                <td>
+                                    <div id="slider" style="color: white"></div>
+                                    <div id="amount" style="color: white"></div>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                    <div id="graph-content-static-auto">
+
+                        <div>
+                            <div id="chartContainer" class="graph-content-graph image-wide">
+                                <img src="images/heapmap.png">
+                            </div><!--/chartContainer2-->
+                        </div>
+
+                        <div>
+                            <div class="graph-content-top white-txt">
+                                <span>Usage</span>
+                            </div><!--/.graph-content-top-->
+
+                            <div id="chartContainer1" class="graph-content-graph">
+                                <div id="chart9" style="width: 100%; height: 300px;"></div>
+                                <div id="chart10" style="width: 100%; height: 300px;"></div>
+                            </div><!--/chartContainer2-->
+                        </div>
+
+                        <div id="chartContainer2" class="graph-content-graph">					        
+
+                            <div class="">
+                                <table class="table gray-table-47-9">
+                                    <tr>
+                                        <th>Top 5 Devices</th>					        			
+                                    </tr>
+                                    <tr>
+                                        <td>Samsung Galaxy S5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nexus 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>iPhone 5S</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HTC One</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Samsung Galaxy Note3</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="graph-content-top white-txt">
+                                <span>Performance</span>
+                            </div><!--/.graph-content-top-->
+
+                            <br>
+
+                            <div class="table1">
+                                <table class="table gray-table-70">
+                                    <tr>
+                                        <th>QoEIndex Wifi</th>
+                                        <th>Media</th>
+                                        <th>Web</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="green">Wifi</td>
+                                        <td>81.83</td>
+                                        <td>78.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pink">2G / 3G</td>
+                                        <td>71.8</td>
+                                        <td>71.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sky-blue">LTE</td>
+                                        <td>74.1</td>
+                                        <td>89.2</td>
+                                    </tr>					        		
+                                </table>
+                            </div>
+
+                            <div class="">
+                                <table class="table gray-table-70">
+                                    <tr>
+                                        <th>Top Apps Usage</th>
+                                        <th>User QoE Score</th>
+                                        <th>Most Used Network</th>
+                                        <th>QoE Score</th>
+                                    </tr>
+                                    <tr>
+                                        <td>ESPN</td>
+                                        <td>86.1</td>
+                                        <td>WiFi</td>
+                                        <td>92.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fox Sports</td>
+                                        <td>69.4</td>
+                                        <td>WiFi</td>
+                                        <td>72.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BBC News</td>
+                                        <td>73.2</td>
+                                        <td>WiFi</td>
+                                        <td>61.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yahoo!</td>
+                                        <td>61.4</td>
+                                        <td>LTE</td>
+                                        <td>89.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USA Today</td>
+                                        <td>78.3</td>
+                                        <td>LTE</td>
+                                        <td>84.3</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+
+
+                        </div><!--/chartContainer2-->
+
+                    </div><!--/.graph-content-->
+
+
+
+
+
+
+                    <div class="clear"></div><!--/.clear-->
+
+                </div><!--/.map-bg-->
+
+            </div><!--/.wrapper-->
+
+        </div><!--/.main-wrapper-->
+        <div class="fixed-footer" style="position: fixed;width: 100%;height: 40px;background-color: rgba(74,144,226,0.5);text-align: center;bottom: 0;left: 0;color: #FFFFFF;font-size: 1.5em;line-height: 40px;    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000; ">
+            All the data displayed in this screen is for demo purposes
+        </div>​
+
+    </body>
+</html>

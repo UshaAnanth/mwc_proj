@@ -1,0 +1,260 @@
+[{
+        "geoCountry": "Argentina",
+        "countryCode": "ARG",
+        "latlong": {
+            "geoCountry": "Argentina",
+            "latitude": -38.4161,
+            "longitude": -63.6167
+        },
+        "mediaPerformance": 21.6977,
+        "overallPerformance": 33.45,
+        "webPerformance": 68.6645,
+        "operators": [
+            {
+                "operatorName": "Argentina_Operator_1",
+                "operatorId": 1,
+                "operatorNameUnAnonymized": "Claro",
+                "mediaPerformance": [
+                    {
+                        "x": 1,
+                        "y": 42
+                    }, {
+                        "x": 2,
+                        "y": 56
+                    }, {
+                        "x": 3,
+                        "y": 41
+                    }
+
+                ],
+                "overallPerformance": [
+                    {
+                        "x": 1,
+                        "y": 10
+                    }, {
+                        "x": 2,
+                        "y": 23
+                    }, {
+                        "x": 3,
+                        "y": 47
+                    }
+
+                ],
+                "webPerformance": [
+                    {
+                        "x": 1,
+                        "y": 31
+                    }, {
+                        "x": 2,
+                        "y": 52
+                    }, {
+                        "x": 3,
+                        "y": 51
+                    }
+
+                ]
+            }, {
+                "operatorName": "Argentina_Operator_2",
+                "operatorId": 2,
+                "operatorNameUnAnonymized": "Movistar",
+                "mediaPerformance": [
+                    {
+                        "x": 1,
+                        "y": 18
+                    }, {
+                        "x": 2,
+                        "y": 1
+                    }, {
+                        "x": 3,
+                        "y": 100
+                    }
+
+                ],
+                "overallPerformance": [
+                    {
+                        "x": 1,
+                        "y": 10
+                    }, {
+                        "x": 2,
+                        "y": 32
+                    }, {
+                        "x": 3,
+                        "y": 23
+                    }
+
+                ],
+                "webPerformance": [
+                    {
+                        "x": 1,
+                        "y": 87
+                    }, {
+                        "x": 2,
+                        "y": 54
+                    }, {
+                        "x": 3,
+                        "y": 19
+                    }
+
+                ]
+            }
+        ]
+
+    }, {
+        "geoCountry": "Australia",
+        "countryCode": "AUS",
+        "latlong": {
+            "geoCountry": "Australia",
+            "latitude": -25.2744,
+            "longitude": 133.775
+        },
+        "mediaPerformance": 63.6977,
+        "overallPerformance": 73.45,
+        "webPerformance": 48.6645,
+        "operators": [
+            {
+                "operatorName": "Australia_Operator_1",
+                "operatorId": 3,
+                "operatorNameUnAnonymized": "Telstra",
+                "mediaPerformance": [
+                    {
+                        "x": 1,
+                        "y": 1
+                    }, {
+                        "x": 2,
+                        "y": 100
+                    }, {
+                        "x": 3,
+                        "y": 12
+                    }
+
+                ],
+                "overallPerformance": [
+                    {
+                        "x": 1,
+                        "y": 67
+                    }, {
+                        "x": 2,
+                        "y": 55
+                    }, {
+                        "x": 3,
+                        "y": 23
+                    }
+
+                ],
+                "webPerformance": [
+                    {
+                        "x": 1,
+                        "y": 87
+                    }, {
+                        "x": 2,
+                        "y": 56
+                    }, {
+                        "x": 3,
+                        "y": 21
+                    }
+
+                ]
+            }
+        ]
+
+    }, {
+        "geoCountry": "India",
+        "countryCode": "IND",
+        "latlong": {
+            "geoCountry": "India",
+            "latitude": 21.000,
+            "longitude": 78
+        },
+        "mediaPerformance": 21.6977,
+        "overallPerformance": 33.45,
+        "webPerformance": 68.6645,
+        "operators": [
+            {
+                "operatorName": "India_Operator_1",
+                "operatorId": 4,
+                "operatorNameUnAnonymized": "BSNL",
+                "mediaPerformance": [
+                    {
+                        "x": 1,
+                        "y": 12
+                    }, {
+                        "x": 2,
+                        "y": 10
+                    }, {
+                        "x": 3,
+                        "y": 45
+                    }
+
+                ],
+                "overallPerformance": [
+                    {
+                        "x": 1,
+                        "y": 67
+                    }, {
+                        "x": 2,
+                        "y": 32
+                    }, {
+                        "x": 3,
+                        "y": 98
+                    }
+
+                ],
+                "webPerformance": [
+                    {
+                        "x": 1,
+                        "y": 7
+                    }, {
+                        "x": 2,
+                        "y": 56
+                    }, {
+                        "x": 3,
+                        "y": 21
+                    }
+
+                ]
+            }, {
+                "operatorName": "India_Operator_2",
+                "operatorId": 5,
+                "operatorNameUnAnonymized": "Airtel",
+                "mediaPerformance": [
+                    {
+                        "x": 1,
+                        "y": 2
+                    }, {
+                        "x": 2,
+                        "y": 62
+                    }, {
+                        "x": 3,
+                        "y": 15
+                    }
+
+                ],
+                "overallPerformance": [
+                    {
+                        "x": 1,
+                        "y": 61
+                    }, {
+                        "x": 2,
+                        "y": 93
+                    }, {
+                        "x": 3,
+                        "y": 52
+                    }
+
+                ],
+                "webPerformance": [
+                    {
+                        "x": 1,
+                        "y": 71
+                    }, {
+                        "x": 2,
+                        "y": 50
+                    }, {
+                        "x": 3,
+                        "y": 4
+                    }
+
+                ]
+            }
+        ]
+    }]

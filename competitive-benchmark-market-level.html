@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <title> Akamai : Competitive Benchmark -Market Level</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/staticpages.js"></script>
+        <script type="text/javascript" src="js/amcharts.js"></script>
+        <script type="text/javascript" src="js/serial.js"></script>
+        <link rel="stylesheet" href="css/rickshaw.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+
+    <body class="map-bg">
+        <div class="main-container">
+            <header class="header-static"> 
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/akamai-logo.png" style="width:200px;"></a>
+                    </div><!--/.logo-->
+
+                    <div class="title">Competitive Benchmark - Market Level</div>
+
+                    <div id="menu-icon" class="menu-icon">				
+                    </div><!--/.menu-icon-->
+
+                </div><!--/.wrapper-->
+            </header><!--/.header-->
+
+            <div id="menu-box">
+                <ul class="menu-links">
+                    <li><a href=""><b>Network Performance Benchmark</b></a><hr>
+                        <ul>
+                            <li><img src="images/dynamic-icon.png"> <a href="index.html">Global Performance Rank</a></li>
+                            <li><img src="images/dynamic-icon.png"> <a href="key-media-analytics-api-comparision.html">Key QoE metrics - Media</a></li>
+                            <li><img src="images/dynamic-icon.png"> <a href="key-run-kpis-comparision.html">Key QoE metrics - Web</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-global-operators.html">MNOs ranking - World Wide</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-country-level.html">MNOs ranking - by Country</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-market-level.html">MNOs ranking - by Markets</a></li>
+                            <li><img src="images/static-icon.png"> <a href="competitive-benchmark-cell-area-level.html">MNOs ranking - by Cell Areas</a></li>
+                        </ul>
+                    </li>
+                    <li></li>
+                    <li><a href=""><b>Wifi Visibility</b></a><hr>
+                        <ul>                            
+                            <li><img src="images/static-icon.png"> <a href="usage-wifi-vs-cellular-market-side-by-side.html">Usage - Wifi vs Cellular (Markets)</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-wifi-vs-cellular-over-time.html">Usage - Wifi vs Cellular (Time Trend)</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-wats-being-used.html">Usage - Breakdown by Content Application</a></li>
+                            <li><img src="images/static-icon.png"> <a href="performance.html">Performance - Wifi vs Cellular</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-performance-market-summary.html">Performance & Usage - by Markets</a></li>
+                            <li><img src="images/static-icon.png"> <a href="usage-performance-zoom-in.html">Performance & Usage - by Cell Areas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.menu-box-->
+
+            <div class="wrapper">
+
+                <div >
+
+                    <div class="sidebar-static">
+
+                        <br>
+
+                        <span class="side-bar-title">&nbsp;Dates</span>
+                        <div class="clear"></div>
+                        <ul class="controls-container">
+                            <li><input type="text" id="datepicker1" class="form-control" style="width: 150px;"  name="add" value="01/01/2015">
+                                <input type="text" id="datepicker2" class="form-control" style="width: 150px;"  name="add" value="01/31/2015"></li>
+                        </ul>
+
+                        <hr width="95%">
+
+                        <span class="side-bar-title">&nbsp;Select QoE Index</span>
+
+                        <ul class="controls-container">
+                            <li>
+                                <div class="btn-group" role="group" aria-label="...">                                    
+                                    <button type="button" class="btn btn-default square-icon-2">Web<br><img src="images/web-icon.png"></button>
+                                    <button type="button" class="btn btn-default  active square-icon-2">Media<br><img src="images/media-icon.png"></button>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <hr width="95%">
+
+                        <span class="side-bar-title">&nbsp;Network Type</span>
+
+                        <ul class="controls-container">
+                            <li>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default active square-icon-3">LTE</button>
+                                    <button type="button" class="btn btn-default square-icon-3">3G</button>
+                                    <button type="button" class="btn btn-default square-icon-3">2G</button>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <hr width="95%">
+
+                        <span class="side-bar-title">&nbsp;Market Drill Down</span>
+                        <ul class="controls-container">
+                            <li> 
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default active square-icon-3">London</button>
+                                    <button type="button" class="btn btn-default square-icon-3">Birmingham</button>
+                                    <button type="button" class="btn btn-default square-icon-3">Leeds</button>
+                                </div>
+                            </li>
+                        </ul> 
+
+                    </div>
+
+                    <div id="graph-content-static-auto">
+
+                        <div>					        
+                            <div id="chartContainer" class="graph-content-graph">
+                                <table class="table gray-table-70" style="width: 100%;text-align: center">
+                                    <tr>
+                                        <th>Top UK Markets</th>
+                                        <th>UK_Operator_1</th>
+                                        <th>UK_Operator_2</th>
+                                        <th>UK_Operator_3</th>
+                                        <th>UK_Operator_4</th>					        			
+                                    </tr>
+                                    <tr class="table-row-blue1">
+                                        <td>London</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>					        			
+                                    </tr>
+                                    <tr class="table-row-blue2">
+                                        <td>Birmingham</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr class="table-row-blue3">
+                                        <td>Leeds</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="table-row-pink1">
+                                        <td>Glasgow</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="table-row-pink2">
+                                        <td>Sheffield</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr class="table-row-pink3">
+                                        <td>Bradford</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="table-row-green1">
+                                        <td>Liverpool</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="table-row-green2">
+                                        <td>Edinburgh</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr class="table-row-green3">
+                                        <td>Manchester</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="table-row-green4">
+                                        <td>Bristol</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="table-row-green5">
+                                        <td>Kirklees</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                    </tr>
+                                </table>
+                            </div><!--/chartContainer2-->
+                            <div id="chartContainer1" class="graph-content-graph image-wide">
+                                <div id="chart4" style="width:100% ;height:400px;">
+                                </div>
+                            </div><!--/chartContainer2-->
+
+
+                            <div class="clear"></div>                            
+                        </div><!--/.-->
+
+                    </div><!--/.graph-content-static-->
+
+                    <div class="clear"></div><!--/.clear-->
+
+                </div><!--/.map-bg-->
+                <script type="text/javascript" src="js/theme.black.js"></script>
+                <script type="text/javascript" src="js/akamai/screen7.js"></script>
+            </div><!--/.wrapper-->
+
+        </div><!--/.main-wrapper-->
+
+        <div class="fixed-footer" style="position: fixed;width: 100%;height: 40px;background-color: rgba(74,144,226,0.5);text-align: center;bottom: 0;left: 0;color: #FFFFFF;font-size: 1.5em;line-height: 40px;    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000; ">
+            All the data displayed in this screen is for demo purposes
+        </div>​
+
+    </body>
+</html>
